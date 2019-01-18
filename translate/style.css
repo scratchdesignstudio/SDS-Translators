@@ -3,39 +3,11 @@
     src: url(scratch.ttf);
 }
 
-a:link{
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited{
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover{
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:active{
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-#link{
-  display: block;
-  text-align: center;
-  font-size: 5em;
-}
-#projectcount{
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    color: black;
 body {
   background-color: #F2F2F2;
   color: black;
+  font-family: scratchFont;
+  src: url(scratch.ttf);
   width: 100vw;
   margin: 0;
   font-size: 16px;
@@ -155,4 +127,3 @@ select:hover {
 #default {
   display: none;
 }
-
