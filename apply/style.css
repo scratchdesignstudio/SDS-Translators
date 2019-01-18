@@ -1,0 +1,46 @@
+@font-face {
+    font-family: scratchFont;
+    src: url(scratch.ttf);
+}
+
+a:link{
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited{
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active{
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+#link{
+  display: block;
+  text-align: center;
+  font-size: 5em;
+}
+#projectcount{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+body{
+  background-color: #0c9ce4;
+  font-family: 'scratchFont', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
