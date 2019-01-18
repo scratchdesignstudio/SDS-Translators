@@ -56,7 +56,7 @@ p {
   width: 620px;
   height: 300px;
   font-size: 15px;
-  border: 2px solid #757575;
+  border: 2px solid #F2F2F2;
   outline: none;
   transition: border 200ms ease-in-out;
 }
@@ -101,7 +101,7 @@ select {
 	background-color:white;
 	border-radius: 0;
 	border: none;
-	border-bottom: 2px solid #757575;
+	border-bottom: 2px solid #F2F2F2;
 	text-decoration: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -121,7 +121,7 @@ select {
 }
 
 select:hover {
-	border-bottom: 2px solid #25AFF4;
+	border-bottom: 2px solid #F2F2F2;
 	-webkit-transition: border-bottom 200ms ease-in-out;
 	transition: border-bottom 200ms ease-in-out;
 	cursor: pointer;
