@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SDS Translation</title>
+    <script src="languages.js"></script>
+    <script src="formatter.js"></script>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  </head>
+  <body onload="dropdownPrep()">
+    <div class="header">
+      <h2>Instructions</h2>
+    </div>
+    <div id="instructions" class="content">
+      <p>Would you like to help translate the SDS?</p>
+      <p>Fantastic! Here are some instructions:</p>
+      <p>To start, fill in the language you are translating and your username.</p>
+      <p>Then, simply type in the translation of each part into the text box below it.</p>
+      <p>Once you start typing, a new section labeled "Result" should appear at the bottom of the page.</p>
+      <br/>
+      <b><p>If you have a Github account:</p></b>
+      <p>Once you are done translating all of the parts, open this link in a new tab: <a href="https://github.com/scratchdesignstudio/info#fork-destination-box">Fork the info repository</a></p>
+      <p>Now you have two options: </p>
+      <p>a) Make a .txt file containing the result in your fork </p>
+      <p>b) Directly add the result into the l10n.js file</p>
+      <br/>
+      <b><p>If you do not have a Github account:</p></b>
+      <p>Once you are done translating all of the parts, put the result into a .txt file.</p>
+      <p>Make sure that we can get to the .txt file by sharing on a platform such as Google Drive or pastebin</p>
+      <br/>
+      <br/>
+      <b><p>Please make sure that you copy the translation exactly!</p></b>
+      <p>Now all you need to do is contact <a href="https://scratch.mit.edu/users/LiFaytheGoblin/">@LiFaytheGoblin</a>, <a href="https://scratch.mit.edu/users/technoboy10/">@technoboy10</a>, or <a href="https://scratch.mit.edu/users/The_Grits/">@The_Grits</a> and leave a link to your translation!</p>
+      <p>Thanks for helping out!</p>
+      <p><em>Please note that all translations will be released under the MIT license (it's similar to what Scratch uses for projects - remixes are OK, but you have to give credit)</em></p>
+    </div>
+    <div class="header">
+      <h2>Translation information</h2>
+    </div>
+    <div class="content">
+      <p>Select the language you're translating the description into.</p>
+      <select id="lang" onchange="render()"><option disabled selected id="default" value="invalid">Your language here</option></select>
+      <p>Translated by (your Scratch username here)</p>
+      <input type="text" placeholder="Your translation here" id="translator" size="75">
+      <br/>
+      <br/>
+    </div>
+    <div class="header">
+      <h2>Unique part of description</h2>
+    </div>
+    <div id="uniqueContent" class="content">
+      <p>Welcome to Scratch 101, a place to view and submit tutorials on anything you enjoy!</p>
+      <input type="text" placeholder="Your translation here" id="unique1" size="75" class="uniqueInput">
+      <br/>
+      <br/>
+      <p>For the 101st SDS, make a project showcasing a tutorial on something you're passionate about. From things like recipes, school concepts, hobbies, current events, or anything else you can think<br/> of, create an educational project to teach more people about what you love! Try and make the project interactive, with pictures, or even sounds! Be sure to view other peoples tutorials as well!</p>
+      <input type="text" placeholder="Your translation here" id="unique2" size="75" class="uniqueInput">
+      <br/>
+    </div>
+    <br/>
+    <br/>
+    <div class="header">
+      <h2>Standard part of description</h2>
+    </div>
+    <div id="standardContent" class="content">
+      <p>To have your project added to this studio, please post a comment with a link. You can find a link to your project by clicking the ‘Embed’ button on the project page. The link will be directly below the Facebook logo.</p>
+      <input type="text" placeholder="Your translation here" id="link" size="75">
+      <br/>
+      <br/>
+      <p>Please submit a single project made no earlier than one month before the start of this Design studio. However, you can update your project, and it'll be eligible again. If you have an older project that would fit, add some new features and feel free to submit the updated version!</p>
+      <input type="text" placeholder="Your translation here" id="age" size="75">
+      <br/>
+      <br/>
+      <p>All projects must meet the community guidelines and be appropriate for all ages!</p>
+      <input type="text" placeholder="Your translation here" id="appropriate" size="75">
+      <br/>
+      <br/>
+      <p>It may take some time for your projects to be added. Please be patient, we add projects oldest to newest; no need to double post!</p>
+      <input type="text" placeholder="Your translation here" id="patience" size="75">
+      <br/>
+      <br/>
+      <p>SDS (Scratch Design Studio) is a themed studio where any Scratcher can submit a project that matches the current theme so long as it meets the requirements shown above.</p>
+      <input type="text" placeholder="Your translation here" id="whatIsSDS" size="75">
+      <br/>
+      <br/>
+      <p>Check out this project to see how new SDS curators are selected: (in English)</p>
+      <input type="text" placeholder="Your translation here" id="selected" size="75">
+      <br/>
+      <br/>
+      <p>Please do not simply ask to be a curator!</p>
+      <input type="text" placeholder="Your translation here" id="ask" size="75">
+      <br/>
+      <br/>
+      <p>Do you have an idea for a future design studio? Visit the studio linked below, read the studio description, and then submit your idea in the form of a project here:</p>
+      <input type="text" placeholder="Your translation here" id="idea" size="75">
+      <br/>
+      <br/>
+      <p>Questions about Scratch Design Studio? Check out the Scratch Wiki's article on it: (in English)</p>
+      <input type="text" placeholder="Your translation here" id="wiki" size="75">
+      <br/>
+      <br/>
+      <p>Check out this account for new updates on the SDS, new SDS curators and more!</p>
+      <input type="text" placeholder="Your translation here" id="account" size="75">
+      <br/>
+      <br/>
+      <p>Credit to @SDScurator1 and @SDScurator2 for the thumbnail!</p>
+      <input type="text" placeholder="Your translation here" id="thumbnail" size="75">
+      <br/>
+      <br/>
+    </div>
+    <br/>
+    <br/>
+    <div class="header">
+      <h2>SDS curators</h2>
+    </div>
+    <div id="curators" class="input content">
+      <p>The SDS is curated by</p>
+      <input type="text" placeholder="Your translation here" id="curatorsp" size="75">
+      <br/>
+      <br/>
+    </div>
+    <div class="finish header">
+      <h2>Result</h2>
+    </div>
+    <div class="finish content">
+      <p>Thanks for your help! Copy the text below and follow the instructions at the top of the page to submit your translation.</p>
+      <textarea id="result" onclick="this.focus();this.select()" readonly></textarea>
+    </div>
+  </body>
+</html>
