@@ -1,123 +1,46 @@
-body {
-  background-color: #F2F2F2;
-  color: black;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  width: 100vw;
-  margin: 0;
-  font-size: 16px;
-  overflow-x: hidden;
+@font-face {
+    font-family: scratchFont;
+    src: url(scratch.ttf);
 }
 
-a:link, a:visited {
-  color: #007CC1;
+a:link{
+  color: white;
+  background-color: transparent;
   text-decoration: none;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-.header {
-  width: 100vw;
-  background-color: #9C0;
+a:visited{
   color: white;
-  z-index: 100000;
-  margin: 0px;
-  margin-bottom: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: transparent;
+  text-decoration: none;
 }
-
-.header  h2 {
-  padding: 5px;
-  margin: 0px;
-  opacity: 1;
-}
-
-p {
-  opacity: 0.6;
-}
-
-.finish {
-  display:none;
-}
-
-#result {
-  border: none;
-  resize: none;
-  width: 620px;
-  height: 300px;
-  font-size: 15px;
-  border: 2px solid #757575;
-  outline: none;
-  transition: border 200ms ease-in-out;
-}
-
-#result:hover {
-  border: 2px solid #007CC1;
-  transition: border 200ms ease-in-out;
-}
-
-#result:focus {
-  border: 2px solid #25AFF4;
-  transition: border 200ms ease-in-out;
-}
-
-.content {
-  padding-left: 15px;
-}
-
-.content input {
-  font-size: 16px;
-  padding:8px 8px 8px 5px;
-  display:block;
-  min-width:300px;
-  border:none;
-  border-bottom:2px solid #757575;
-  transition: border-bottom 200ms ease-in-out;
-}
-
-.content input:hover {
-  border-bottom: 2px solid #007CC1;
-  transition: border-bottom 200ms ease-in-out;
-}
-.content input:focus {
-  outline:none;
-  border-bottom: 2px solid #25AFF4;
-  transition: border-bottom 200ms ease-in-out;
-}
-
-select {
-  font-size: 18px;
+a:hover{
   color: black;
-	background-color:white;
-	border-radius: 0;
-	border: none;
-	border-bottom: 2px solid #757575;
-	text-decoration: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-	text-align: left;
-	outline: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background: url("downarrow.svg") 97%/5% no-repeat;
-	background-size: 18px;
-	height: auto;
-	width: 200px;
-	-webkit-transition: border-bottom 200ms ease-in-out;
-	transition: border-bottom 200ms;
-  padding-left: 1px;
+  background-color: transparent;
+  text-decoration: none;
 }
-
-select:hover {
-	border-bottom: 2px solid #25AFF4;
-	-webkit-transition: border-bottom 200ms ease-in-out;
-	transition: border-bottom 200ms ease-in-out;
-	cursor: pointer;
+a:active{
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
-
-#default {
-  display: none;
+#link{
+  display: block;
+  text-align: center;
+  font-size: 5em;
+}
+#projectcount{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+body{
+  background-color: #0c9ce4;
+  font-family: 'scratchFont', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
