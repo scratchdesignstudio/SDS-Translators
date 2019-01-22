@@ -1,2 +1,2 @@
 # SDS-Translators
-A website ofr the SDS Translators.
+A website for the SDS Translators.
