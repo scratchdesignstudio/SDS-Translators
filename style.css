@@ -26,9 +26,4 @@ a:active{
 body{
   background-color: #0c9ce4;
   font-family: 'scratchFont', sans-serif;
-  position: absolute;
-  top: 50%;
-  margin-left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
 }
