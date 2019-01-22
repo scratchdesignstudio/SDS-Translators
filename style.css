@@ -23,17 +23,6 @@ a:active{
   background-color: transparent;
   text-decoration: none;
 }
-#link{
-  display: block;
-  text-align: center;
-  font-size: 5em;
-}
-#projectcount{
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    color: black;
-}
 body{
   background-color: #0c9ce4;
   font-family: 'scratchFont', sans-serif;
